@@ -16,4 +16,4 @@ RUN (crontab -l ; echo "0 9-18 * * 1-5 /usr/local/bin/python /usr/src/app/main.p
 
 RUN python3 /usr/src/app/init_models.py
 
-CMD cron && tail -f /var/log/cron.log
+CMD cron && tail -f /usr/src/app/cron.log
